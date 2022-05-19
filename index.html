@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Portal de Filmes</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img class="navbar-brand" src="imagens/cineflix1.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrevistas">Entrevistas & Making of</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Notícias</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bloco de Lançamento -->
+        <div class="container main">
+            <h2 class="lancamentos" id="lancamentos">Lançamentos</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+
+                    <!-- 1 Filme -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row" style="margin-bottom: 35px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S55qvOKW5T0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <h1>Morbius</h1>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            Diretor: Daniel Espinosa
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            Roteiro: Burk Sharpless e Matt Sazama
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            Elenco: JARED LETO, MATT SMITH, ADRIA ARJONA, JARED HARRIS, AL MADRIGAL, TYRESE GIBSON, MICHAEL KEATON, ARCHIE RENAUX
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        Estreia: 31 de março de 2022
+                                    </div>
+
+                                    <div class="col-12">
+                                        Avaliação: ★★★☆☆
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 Filme.... , replicar o filme 1 4x-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Destaque -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="destaques" id="destaques">Em destaque</h2>
+                </div>
+                <div class="col-6">
+                    <div class="dropdown" style="text-align: right;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoria: TODOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Comedia</a></li>
+                            <li><a class="dropdown-item" href="#">Ação</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/tenet.jpeg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>Tenet</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/interstelar.jpeg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>Interestelar</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/007.jpeg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>007</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <img src="imagens/resgate.jpeg" class="card-img-top" alt="filme1">
+                        <div class="card-body">
+                            <p class="card-text"><b>Resgate</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Avaliação pelos Usuários -->
+        <div class="container">
+            <h2 class="avaliacoes" id="avaliacoes">Últimas avaliações</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="imagens/avatar-vera.jpeg" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>nome: Vera</h6>
+                                <p><b>Avaliação:</b> Assisti Agora o filme tenet, gostei muito.</p>
+                                <p>★★★★★ - 08/04/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="imagens/avatar-João.jpeg" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>João</h6>
+                                <p><b>Avaliação:</b> Acabei de assistir o filme lançamento do site, muito bom.</p>
+                                <p>★★★★★ - 04/04/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="imagens/avatar-rafael.jpeg" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Rafael</h6>
+                                <p><b>Avaliação:</b> Gostei desse novo 007, mas prefiro os antigos da franquia</p>
+                                <p>★★★★☆ - 07/04/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais avaliações</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Entrevistas & Making of -->
+        <div class="container">
+            <h2 class="entrevistas" id="entrevistas">Entrevistas & Making of</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u0hCSxqnjT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tjsUt6YW9go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>               
+                 </div>
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GfV0gzcdaVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p><b>Filme:</b> Tenet<br>
+                        <b>Diretor:</b> Christopher Nolan<br>
+                        <b>Roteiro:</b> Christopher Nolan <b>Estreia:</b> 29/10/2020
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p><b>Filme:</b> interestelar<br>
+                        <b>Diretor:</b> Christopher Nolan<br>
+                        <b>Roteiro:</b> Jonathan Nolan e Christopher Nolan <b>Estreia:</b> 6/11/2014
+                    </p>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p><b>Filme:</b> interestelar<br>
+                        <b>Diretor:</b> Christopher Nolan<br>
+                        <b>Roteiro:</b> Jonathan Nolan e Christopher Nolan <b>Estreia:</b> 6/11/2014
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco de Entrevistas & Making of -->
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="novidades" id="novidades">Notícias</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="imagens/eusoualenda.jpeg" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>Will Smith vai estar em eu sou a lenda 2?</h5>
+                                <p>Mesmo ápos a polemica do oscar envolvendo<strong> Will Smith </strong> e Chris Rock, o astro do cinema deve sim participar do filme porém...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 10px;">
+                        <div class="row">
+                            <div class="ol-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="imagens/dr_estranho.jpeg" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>Dr estranho 2 é o filme mais esperado de 2022</h5>
+                                <p>Dr estranho 2 é filme mais aguardado da marvel desde vingadores ultimato, é esprado que mais um filme da marvel alcance mais de 1 bilão de dolares...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 10px; margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="ol-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="imagens/Animais-Fantasticos-3.jpeg" alt="Animais-Fantasticos">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5> Animais Fantásticos: Filme está recebendo muita critica negativa</h5>
+                                <p>Filme vem sendo muito criticado negativamente pelos criticos, porém o publico não está tão ruim assim como os criticos dizem...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco de Sobre -->
+                <div class="col-4">
+
+                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="footertext">© 2022 Copyright: Cineflix 
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
